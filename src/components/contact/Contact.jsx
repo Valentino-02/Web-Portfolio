@@ -31,27 +31,9 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact_container">
-        <div className="contact_options">
-          <article className="contact_option">
-            <BiMessageSquareDetail className="contact_option_icon" />
-            <h4>Email</h4>
-            <h5>collazo.valentino@gmail.com</h5>
-            <a href="mailto:collazo.valentino@gmail.com">Send a message</a>
-          </article>
-          <article className="contact_option">
-            <BiMessageSquareDetail className="contact_option_icon" />
-            <h4>Watsap</h4>
-            <h5>+54 1 294-4666190</h5>
-            <a href="https://api.whatsapp.com/send?phone=+541294-4666190">
-              Send a message
-            </a>
-          </article>
-        </div>
-
+      <div className="form_container">
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -70,6 +52,23 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+      </div>
+
+      <div className="contact_options">
+        <article className="contact_option">
+          <h4>Email: </h4>
+
+          <a href="mailto:collazo.valentino@gmail.com">
+            <h2>collazo.valentino@gmail.com</h2>
+          </a>
+        </article>
+        <article className="contact_option">
+          <h4>Whatsapp: </h4>
+
+          <a href="https://api.whatsapp.com/send?phone=+541294-4666190">
+            <h2>+54 1 294-4666190</h2>
+          </a>
+        </article>
       </div>
     </section>
   );

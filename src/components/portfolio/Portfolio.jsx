@@ -12,6 +12,8 @@ const data = [
     id: 1,
     img: Img1,
     title: "A Title",
+    description:
+      "A description about this Project and what it does. Maybe. A description about this Project and what it does. Maybe",
     github: "https://github.com",
     demo: "https://github.com",
   },
@@ -19,6 +21,26 @@ const data = [
     id: 2,
     img: Img2,
     title: "A Title",
+    description:
+      "A description about this Project and what it does. Maybe. A description about this Project and what it does. Maybe",
+    github: "https://github.com",
+    demo: "https://github.com",
+  },
+  {
+    id: 3,
+    img: Img2,
+    title: "A Title",
+    description:
+      "A description about this Project and what it does. Maybe. A description about this Project and what it does. Maybe",
+    github: "https://github.com",
+    demo: "https://github.com",
+  },
+  {
+    id: 4,
+    img: Img2,
+    title: "A Title",
+    description:
+      "A description about this Project and what it does. Maybe. A description about this Project and what it does. Maybe",
     github: "https://github.com",
     demo: "https://github.com",
   },
@@ -27,35 +49,37 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Projects</h5>
-      <h2>Portfolio</h2>
+      <h2>My Projects</h2>
 
       <div className="container portfolio_container">
-        {data.map(({ id, img, title, github, demo }) => {
+        {data.map(({ id, img, title, description, github, demo }) => {
           return (
             <article key={id} className="portfolio_item">
-              <div className="portfolio_item_image">
-                <img src={img} alt={title} />
-              </div>
               <h3>{title}</h3>
-              <div className="portfolio_item_cta">
-                <a
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
+              <div className="portfolio_item_container">
+                <div className="portfolio_item_image">
+                  <img src={img} alt={title} />
+                </div>
+                <div className="portfolio_item_cta">
+                  <a
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
+              <h5>{description}</h5>
             </article>
           );
         })}

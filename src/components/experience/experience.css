@@ -1,20 +1,20 @@
 .experience_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 8rem;
 }
 
 .experience_container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+    background: linear-gradient(var(--color-bg-variant), var(--color-bg));
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    border: 2 px solid transparent;
+    transition: transform .2s;
+
 }
 
 .experience_container > div:hover {
-    background: transparent;
-    border-color: var(--color--primary-variant);
+    transform: scale(1.1);
     cursor: default;
 }
 
@@ -28,6 +28,7 @@
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color--primary);
+    grid-template-columns: 1 fr 1 fr;
 }
 
 .experience_details {

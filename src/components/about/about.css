@@ -1,7 +1,8 @@
 .about_container {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 60% 25%;
     gap: 15%;
+    margin-bottom: 2rem;
 }
 
 .about_me {
@@ -11,6 +12,7 @@
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
+
 }
 
 .portrait_about_me {
@@ -25,8 +27,9 @@
 }
 
 .about_cards {
+    margin: 0 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem
 }
 
@@ -34,7 +37,7 @@
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     transition: var(--transition);
 }

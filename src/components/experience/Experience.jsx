@@ -5,8 +5,7 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>The Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>My Skills</h2>
 
       <div className="container experience_container">
         <div>
@@ -14,24 +13,27 @@ const Experience = () => {
           <div className="experience_content">
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>JavaScript</h4>
             </article>
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>HTML</h4>
             </article>
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>CSS</h4>
+            </article>
+            <article className="experience_details">
+              <BiMessageSquareDetail className="experience_details_icon" />
+              <h4>React</h4>
+            </article>
+            <article className="experience_details">
+              <BiMessageSquareDetail className="experience_details_icon" />
+              <h4>Redux</h4>
+            </article>
+            <article className="experience_details">
+              <BiMessageSquareDetail className="experience_details_icon" />
+              <h4>Axios</h4>
             </article>
           </div>
         </div>
@@ -40,24 +42,19 @@ const Experience = () => {
           <div className="experience_content">
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Python</h4>
             </article>
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Node JS</h4>
             </article>
             <article className="experience_details">
               <BiMessageSquareDetail className="experience_details_icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Basic</small>
-              </div>
+              <h4>Express</h4>
+            </article>
+            <article className="experience_details">
+              <BiMessageSquareDetail className="experience_details_icon" />
+              <h4>MongoDB</h4>
             </article>
           </div>
         </div>

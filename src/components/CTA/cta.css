@@ -1,0 +1,23 @@
+.cta_top{
+    position: fixed;
+    top: 20%;
+    right: 25%;
+    z-index: 2;
+    transition: top 1s, right 0.4s;
+    display: grid;
+    grid-template-rows: 0.5fr;
+}
+
+.cta_bottom {
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    z-index: 2;
+    transition: top 1s, right 0.4s;
+    display: grid;
+    grid-template-rows: 0.5fr ;
+    align-content: center;
+}
+
+
+
