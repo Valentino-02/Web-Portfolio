@@ -24,11 +24,18 @@ const Nav = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#projects"
-        onClick={() => setActiveNav("#projects")}
-        className={activeNav === "#projects" ? "active" : ""}
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
       >
         <AiOutlineHome />
+      </a>
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <BiMessageSquareDetail />
       </a>
       <a
         href="#contact"

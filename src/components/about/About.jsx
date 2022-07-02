@@ -1,18 +1,21 @@
 import "./about.css";
-import React, { useEffect } from "react";
-import Portrait from "../../assets/me-about.jpg";
+import  { React, useEffect} from "react";
+import Portrait from "../../assets/me.jpg";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 600 });
   }, []);
 
   return (
     <section id="about">
-      <h2>About Me</h2>
+      <h2>{t("about_title")}</h2>
 
       <div className="container about_container">
         <p>
@@ -30,36 +33,46 @@ const About = () => {
           right now I am looking for a job to further my growth. I am very
           reliable, and have great comunication and problem solving skills.
         </p>
+
         <div className="portrait_about_me">
           <img src={Portrait} alt="portrait" />
         </div>
       </div>
 
-      <h2>Interests</h2>
+      <h2>{t("interests")}</h2>
 
       <div className="about_cards">
         <div data-aos="fade-up">
           <article className="about_card">
             <BiMessageSquareDetail className="about_icon" />
-            <h5>Phicisist</h5>
-            <small>Finishing the Degree</small>
+            <h5>{t("phycicist")}</h5>
+            <small>{t("phycicist_d")}</small>
           </article>
         </div>
-        <article className="about_card">
-          <BiMessageSquareDetail className="about_icon" />
-          <h5>Cook</h5>
-          <small>Years of professional coocking</small>
-        </article>
-        <article className="about_card">
-          <BiMessageSquareDetail className="about_icon" />
-          <h5>Musician</h5>
-          <small>Life Long Musician</small>
-        </article>
-        <article className="about_card">
-          <BiMessageSquareDetail className="about_icon" />
-          <h5>Game Dev</h5>
-          <small>Into Game Dev</small>
-        </article>
+
+        <div data-aos="fade-up">
+          <article className="about_card">
+            <BiMessageSquareDetail className="about_icon" />
+            <h5>{t("cook")}</h5>
+            <small>{t("cook_d")}</small>
+          </article>
+        </div>
+
+        <div data-aos="fade-up">
+          <article className="about_card">
+            <BiMessageSquareDetail className="about_icon" />
+            <h5>{t("musician")}</h5>
+            <small>{t("musician_d")}</small>
+          </article>
+        </div>
+
+        <div data-aos="fade-up">
+          <article className="about_card">
+            <BiMessageSquareDetail className="about_icon" />
+            <h5>{t("game_dev")}</h5>
+            <small>{t("game_dev_d")}</small>
+          </article>
+        </div>
       </div>
     </section>
   );

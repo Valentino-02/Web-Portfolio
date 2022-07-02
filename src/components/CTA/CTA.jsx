@@ -1,12 +1,14 @@
 import "./cta.css";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const CTA = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div className={props.isOnTop ? "cta_top" : "cta_bottom"}>
-      {props.isOnTop ? console.log("yes") : console.log("no")}
       <a href="#contact">
-        <h5 className="cta_text">Lets Talk!</h5>
+        <h5 className="cta_text">{t("cta")}</h5>
       </a>
     </div>
   );

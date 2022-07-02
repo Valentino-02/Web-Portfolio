@@ -18,12 +18,11 @@
 .portrait_about_me {
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
     transition: var(--transition);
 }
 
 .portrait_about_me:hover {
-    transform: rotate(0);
+    transform: rotate(180deg);
 }
 
 .about_cards {

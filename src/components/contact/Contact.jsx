@@ -3,8 +3,11 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,25 +34,30 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>{t("contact_title")}</h2>
 
       <div className="form_container">
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name"
+            placeholder={t("contact_name")}
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="email"
+            name="email"
+            placeholder={t("contact_email")}
+            required
+          />
           <textarea
             name="message"
             rows="7"
-            placeholder="Your Message"
+            placeholder={t("contact_message")}
             required
           />
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {t("contact_send")}
           </button>
         </form>
       </div>

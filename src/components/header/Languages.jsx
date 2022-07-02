@@ -1,26 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const lngs = {
-  en: { nativeName: "English" },
-  es: { nativeName: "Español" },
-};
-
 const Languages = () => {
+  const [activeLang, setActiveLang] = useState("en");
   const { i18n } = useTranslation();
   return (
     <div className="languages">
       <h5>Maybe in?</h5>
-      {Object.keys(lngs).map((lng) => (
-        <button
-          className="btn btn-primary"
-          key={lng}
-          type="submit"
-          onClick={() => i18n.changeLanguage(lng)}
-        >
-          {lngs[lng].nativeName}
-        </button>
-      ))}
+      <button
+        className={
+          activeLang === "en" ? "btn btn-primary-2 active" : "btn btn-primary-2"
+        }
+        type="submit"
+        onClick={() => {
+          i18n.changeLanguage("en");
+          setActiveLang("en");
+        }}
+      >
+        English
+      </button>
+      <button
+        className={
+          activeLang === "es" ? "btn btn-primary-2 active" : "btn btn-primary-2"
+        }
+        type="submit"
+        onClick={() => {
+          i18n.changeLanguage("es");
+          setActiveLang("es");
+        }}
+      >
+        Español
+      </button>
     </div>
   );
 };

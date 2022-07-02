@@ -10,7 +10,9 @@ import CTA from "./components/CTA/CTA.jsx";
 
 const App = () => {
   const Ref = useRef();
+
   const [isRefVisible, setIsRefVisible] = useState();
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
