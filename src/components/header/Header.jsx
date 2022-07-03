@@ -19,7 +19,6 @@ const Header = () => {
 
         <HeaderSocials />
         <Languages />
-
       </div>
     </header>
   );
