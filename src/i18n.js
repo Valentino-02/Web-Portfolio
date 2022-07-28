@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 const translationsEn = {
   intro: "Hello There! My name is",
-  title: "Aspiring Fullstack Developer",
+  title: "Aspiring Web Developer",
   cta: "Let's Talk!",
   about_title: "About Me",
   interests: "interests",
@@ -27,11 +27,12 @@ const translationsEn = {
   about: "About",
   experience: "Experience",
   portfolio: "Portfolio",
+  info: "My name is Valentino Collazo, and I am a self thought developer from Argentina. My journey with development started on july of 2021, when I became interested in learning python to start doing some data analysis and ploting for physiscs. After getting used to do stuff with it, I decided to see if I was able to fullfill a life-long dream of making a computer game. The open source game engine Godot uses a custom language, GDScript, which is quite similar to python, so I learned how to use it and made my first decent game, Photons Journey. At this point my love for development grew exponentially, and decided to pursue a career in Web Development. I learned some of the most standard languages and technologys that the industry is using, and right now I am looking for a job to further my growth. I am very reliable, and have great comunication and problem solving skills.",
 };
 
 const translationsEs = {
   intro: "Hola! Me llamo",
-  title: "Aspirante a Desarrollador Fullstack",
+  title: "Aspirante a Desarrollador Web",
   cta: "Hablemos!",
   about_title: "Acerca de mi",
   interests: "intereses",
@@ -55,6 +56,7 @@ const translationsEs = {
   about: "Info",
   experience: "Experiencia",
   portfolio: "Portafolio",
+  info: "Mi nombre es Valentino Collazo, y soy un desarrollador de software autodidacta de Argentina. Empeze con el mundo de desarrolo de software en julio de 2021, cuando me interese en aprender python para hacer analisis de datos, y ploteos para el area de fisica. Despues de familiarizarme con la herramienta, decidi ver si era capaz de realizar un sueño de toda la vida, crear un videojuego. El motor de codigo libre Godot usa el lenguaje GdScript, el cual es muy similar a python, por lo tanto aprendi a utilizarlo y pude crear mi primer juego decente, Photons Journey. En este punto mi pasion por el desarrollo crecio exponencialmente, y decidi emprender una carrera como desarrolador web. Aprendi algunas de las tecnologias y lenguajes mas utilizadas en la industria, y ahora mismo me encuentro en busqueda laboral. Soy muy confiable, y tengo grandes capacidades de comunicacion y resolucion de problemas.",
 };
 
 i18n

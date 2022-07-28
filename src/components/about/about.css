@@ -17,12 +17,16 @@
 
 .portrait_about_me {
     border-radius: 2rem;
+    background: #d3d3d3;
+    border-radius: 2rem;
+    border: 6px solid;
+    border-color: var(--color-bg-variant);
     overflow: hidden;
     transition: var(--transition);
 }
 
 .portrait_about_me:hover {
-    transform: rotate(180deg);
+    border-color: var(--color-primary-variant);
 }
 
 .about_cards {

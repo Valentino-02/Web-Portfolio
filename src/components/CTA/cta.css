@@ -1,7 +1,7 @@
 .cta_top{
     position: fixed;
-    top: 20%;
-    right: 25%;
+    top: 62%;
+    right: 65%;
     z-index: 2;
     transition: top 0.4s, right 1s ease;
     display: grid;
@@ -20,5 +20,16 @@
     transform: scale(0.7);
 }
 
+/* Media Queries (medium devices) */
+@media screen  and (max-width: 1024px) {
+    .cta_top {
+        right: 70%;
+    }
+}
 
-
+/* Media Queries (small devices) */
+@media screen  and (max-width: 600px) {
+    .cta_top {
+        right: 87%;
+    }
+}

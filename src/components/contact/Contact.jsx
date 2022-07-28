@@ -1,8 +1,8 @@
 import "./contact.css";
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import { useRef } from "react";
-import { BiMessageSquareDetail } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
@@ -22,10 +22,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast("Message Sent!");
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Error in sending the message");
         }
       );
 
@@ -73,9 +73,9 @@ const Contact = () => {
         <article className="contact_option">
           <h4>Whatsapp: </h4>
 
-          <a href="https://api.whatsapp.com/send?phone=+541294-4666190">
-            <h2>+54 1 294-4666190</h2>
-          </a>
+          <p>
+            <h2>+54 9 294-4666190</h2>
+          </p>
         </article>
       </div>
     </section>

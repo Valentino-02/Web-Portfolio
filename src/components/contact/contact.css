@@ -8,6 +8,7 @@
 .contact_options {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +40,11 @@
 
 .contact_option a {
     font-size: 0.8rem;
+}
+
+.contact_option p {
+    font-size: 0.8rem;
+    color: var(--color-primary);
 }
 
 input, textarea {

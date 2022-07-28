@@ -1,7 +1,9 @@
 import "./nav.css";
 import React from "react";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { BiMessageSquareDetail } from "react-icons/bi";
+import { GiOpenBook } from "react-icons/gi";
+import { RiSuitcaseFill } from "react-icons/ri";
+import { FiMail } from "react-icons/fi";
 import { useState } from "react";
 
 const Nav = () => {
@@ -28,21 +30,21 @@ const Nav = () => {
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
-        <AiOutlineHome />
+        <GiOpenBook />
       </a>
       <a
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
         className={activeNav === "#portfolio" ? "active" : ""}
       >
-        <BiMessageSquareDetail />
+        <RiSuitcaseFill />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <BiMessageSquareDetail />
+        <FiMail />
       </a>
     </nav>
   );
