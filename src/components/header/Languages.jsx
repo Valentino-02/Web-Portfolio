@@ -6,7 +6,6 @@ const Languages = () => {
   const { i18n } = useTranslation();
   return (
     <div className="languages">
-      <h5>Maybe in?</h5>
       <button
         className={
           activeLang === "en" ? "btn btn-primary-2 active" : "btn btn-primary-2"

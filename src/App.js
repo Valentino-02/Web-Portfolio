@@ -26,9 +26,9 @@ const App = () => {
       <>
         <div ref={Ref}></div>
         <Header />
-        <About />
         <Experience />
         <Portfolio />
+        <About />
         <Contact />
         <CTA isOnTop={isRefVisible} />
         <Nav />

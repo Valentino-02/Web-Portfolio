@@ -27,7 +27,7 @@ const translationsEn = {
   about: "About",
   experience: "Experience",
   portfolio: "Portfolio",
-  info: "My name is Valentino Collazo, and I am a self thought developer from Argentina. My journey with development started on july of 2021, when I became interested in learning python to start doing some data analysis and ploting for physiscs. After getting used to do stuff with it, I decided to see if I was able to fullfill a life-long dream of making a computer game. The open source game engine Godot uses a custom language, GDScript, which is quite similar to python, so I learned how to use it and made my first decent game, Photons Journey. At this point my love for development grew exponentially, and decided to pursue a career in Web Development. I learned some of the most standard languages and technologys that the industry is using, and right now I am looking for a job to further my growth. I am very reliable, and have great comunication and problem solving skills.",
+  info: "I am a fullstack developer from Argentina. I became interested in learning python to do data science for my degree in physics. Then I learned to use the open source game engine Godot, to do game-dev. And finally I decided to pursue a career in fullstack development. Fullstack won me over, because of the immense impact it has on the world, and just how relevant it is. My priorities as an employee are writing clean and efficient code, being a team player, and finding creative solutions. If you think I can be of use to you, don't doubt contacting me!",
 };
 
 const translationsEs = {
@@ -56,7 +56,7 @@ const translationsEs = {
   about: "Info",
   experience: "Experiencia",
   portfolio: "Portafolio",
-  info: "Mi nombre es Valentino Collazo, y soy un desarrollador de software autodidacta de Argentina. Empeze con el mundo de desarrolo de software en julio de 2021, cuando me interese en aprender python para hacer analisis de datos, y ploteos para el area de fisica. Despues de familiarizarme con la herramienta, decidi ver si era capaz de realizar un sueño de toda la vida, crear un videojuego. El motor de codigo libre Godot usa el lenguaje GdScript, el cual es muy similar a python, por lo tanto aprendi a utilizarlo y pude crear mi primer juego decente, Photons Journey. En este punto mi pasion por el desarrollo crecio exponencialmente, y decidi emprender una carrera como desarrolador web. Aprendi algunas de las tecnologias y lenguajes mas utilizadas en la industria, y ahora mismo me encuentro en busqueda laboral. Soy muy confiable, y tengo grandes capacidades de comunicacion y resolucion de problemas.",
+  info: "Soy un desarrollador fullstack de Argentina. Me interese en aprender python para hacer data science para carrera en física. Despues aprendi a usar el motor de videojuegos open source Godot, para hacer game-dev. Y finalmente decidi meterme de lleno en el mundo del desarrollo y las tecnologias. Me decidi por hacer desarrolo Fullstack, por el inmenso impacto que tiene en el mundo. Mis prioridades como empleado son escribir codigo eficiente y ordenado, ser un jugador de equipo, y encontrar soluiones creativas a diversos problemas. Si usted cree que le puedo ser de utilidad, no dude en contactarme!",
 };
 
 i18n

@@ -1,11 +1,12 @@
-.cta_top{
+.cta_top {
     position: fixed;
-    top: 62%;
-    right: 65%;
+    top: 30%;
+    right: 25%;
     z-index: 2;
     transition: top 0.4s, right 1s ease;
     display: grid;
     grid-template-rows: 0.5fr;
+    transform: scale(1.4)
 }
 
 .cta_bottom {
@@ -15,21 +16,21 @@
     z-index: 2;
     transition: top 1s, right 0.3s ease;
     display: grid;
-    grid-template-rows: 0.5fr ;
+    grid-template-rows: 0.5fr;
     align-content: center;
     transform: scale(0.7);
 }
 
 /* Media Queries (medium devices) */
-@media screen  and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .cta_top {
-        right: 70%;
+        right: 10%;
     }
 }
 
 /* Media Queries (small devices) */
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .cta_top {
-        right: 87%;
+        right: 10%;
     }
 }

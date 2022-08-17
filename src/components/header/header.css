@@ -16,12 +16,12 @@ header {
 /* Languages */
 .languages {
     position: relative;
-    align-items: center;
+    align-items: left;
     top: 10%;
     margin-top: 4rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
+    justify-content: left;
 }
 
 .languages h5 {
@@ -51,7 +51,7 @@ header {
 /* HeaderSocials */
 .header_socials {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     gap: 0.8rem;
     position: absolute;
@@ -60,7 +60,7 @@ header {
 }
 
 /* Media Queries (medium devices) */
-@media screen  and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .header {
         height: 68vh;
         align-self: center;
@@ -68,14 +68,15 @@ header {
 }
 
 /* Media Queries (small devices) */
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header {
         height: 100vh;
-
     }
+
     .introduction {
         margin-left: 0.9rem;
     }
+
     .header_socials,
     .scroll_down {
         display: none;

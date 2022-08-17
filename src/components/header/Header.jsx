@@ -15,10 +15,11 @@ const Header = () => {
           <h5>{t("intro")}</h5>
           <h1>Valentino</h1>
           <h5 className="text-light">{t("title")}</h5>
+          <Languages />
         </div>
 
         <HeaderSocials />
-        <Languages />
+
       </div>
     </header>
   );

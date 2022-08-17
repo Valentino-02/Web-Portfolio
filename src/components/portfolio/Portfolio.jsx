@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Img1 from "../../assets/project1.png";
 import Img2 from "../../assets/project2.png";
-import Img3 from "../../assets/project3.png";
+
 import Img4 from "../../assets/project4.png";
 
 const data = [
@@ -14,7 +14,7 @@ const data = [
     img: Img1,
     title: "Crypto Updates",
     description:
-      "Get the latest info and news about all cryptocurrencies! made mainly with react, redux and antdesign. It consumes Apis provided by rapidapi.com",
+      "made mainly with react, redux and antdesign. It consumes Apis provided by rapidapi.com. Shows info, news and data of all CryptoCoins",
     github: "https://github.com/Valentino-02/CryptoUpdates",
     demo: "https://62e13f70d5afc520c6139f7c--glittering-jalebi-df258d.netlify.app",
     animation: "fade-right",
@@ -24,7 +24,7 @@ const data = [
     img: Img2,
     title: "Photons Journey",
     description:
-      "A game made with the open source engine Godot. Programmed in GdScript, which is quite similar to python. It won the third place in the GoGodot 2 Jam",
+      "Game made with the open source engine Godot. Programmed in GdScript. It won the third place in the GoGodot 2 Jam",
     github: "https://github.com/best-godot-team-ever/GoGodotJam",
     demo: "https://tinygodzilla.itch.io/photons-journey",
     animation: "fade-left",
@@ -45,7 +45,7 @@ const data = [
     id: 4,
     img: Img4,
     title: "Personal Webpage",
-    description: "This very page, and also a good looking presentation card!",
+    description: "This very page. Made with React. Language support with i18-next",
     github: "https://github.com/Valentino-02/Web-Portfolio",
     demo: "https://personal-portfolio-web.herokuapp.com",
     animation: "fade-right",

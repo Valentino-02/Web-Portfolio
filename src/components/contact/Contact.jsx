@@ -1,7 +1,8 @@
 import "./contact.css";
 import React from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -22,10 +23,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          toast("Message Sent!");
+          toast("Message sent!");
         },
         (error) => {
-          toast.error("Error in sending the message");
+          toast("Error in sending the message");
         }
       );
 
@@ -78,6 +79,7 @@ const Contact = () => {
           </p>
         </article>
       </div>
+      <ToastContainer />
     </section>
   );
 };
